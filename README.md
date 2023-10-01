@@ -1,2 +1,2 @@
 # top-restaurant
-A simple restaurant homepage!
+A simple restaurant homepage using webpack!
