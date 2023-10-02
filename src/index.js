@@ -13,7 +13,6 @@ headerList.appendChild(createListElement('Link 1'));
 headerList.appendChild(createListElement('Link 1'));
 headerList.appendChild(createListElement('Link 1'));
 headerDiv.appendChild(headerList);
-console.log(contentDiv);
 contentDiv.appendChild(headerDiv);
 
 let bodyDiv = document.createElement('div');
