@@ -2,6 +2,12 @@ export function createLayout() {
   let contentDiv = document.querySelector("#content");
 
   let headerDiv = document.createElement("div");
+  headerDiv.classList.add('header');
+
+  let heading = document.createElement('h2');
+  heading.textContent = 'Restaurant';
+  headerDiv.appendChild(heading);
+
   let headerList = document.createElement("ul");
 
   function createListElement(text) {
