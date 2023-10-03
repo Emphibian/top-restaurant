@@ -2,10 +2,10 @@ export function createLayout() {
   let contentDiv = document.querySelector("#content");
 
   let headerDiv = document.createElement("div");
-  headerDiv.classList.add('header');
+  headerDiv.classList.add("header");
 
-  let heading = document.createElement('h2');
-  heading.textContent = 'Restaurant';
+  let heading = document.createElement("h2");
+  heading.textContent = "Restaurant";
   headerDiv.appendChild(heading);
 
   let headerList = document.createElement("ul");
@@ -23,17 +23,26 @@ export function createLayout() {
   contentDiv.appendChild(headerDiv);
 
   let bodyDiv = document.createElement("div");
+  bodyDiv.classList.add("blocks");
 
   function createBlockDiv(img, text) {
     let blockDiv = document.createElement("div");
+    let blockTextDiv = document.createElement("div");
     let heading = document.createElement("h2");
+    let blockText = document.createElement("p");
+
+    blockText.textContent =
+      "Lorem ipsum dolor sit amet, qui minim labore adipisicing minim sint cillum sint consectetur cupidatat.";
     let image = new Image(300);
 
+    blockTextDiv.classList.add("block-text");
     image.src = img;
     heading.textContent = text;
 
-    blockDiv.appendChild(heading);
+    blockTextDiv.appendChild(heading);
+    blockDiv.appendChild(blockTextDiv);
     blockDiv.appendChild(image);
+    blockDiv.classList.add("block");
     return blockDiv;
   }
 
