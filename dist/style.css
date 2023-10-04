@@ -15,14 +15,29 @@
   flex-direction: column;
   gap: 1rem;
   justify-content: space-between;
-  padding: 1rem 1rem;
+  padding: 0 1rem;
+  padding-top: 1rem;
   align-items: center;
   background-color: #feeb98;
+  font-size: 1.5rem;
 }
 
 .nav {
   display: flex;
-  gap: 4rem;
+}
+
+.nav button {
+  border: none;
+  font-size: 1.2rem;
+  padding: 0.5rem 2rem;
+}
+
+.nav button:hover {
+  background-color: #f2e091;
+}
+
+.nav button:active {
+  background-color: #ebd98d;
 }
 
 .blocks {
