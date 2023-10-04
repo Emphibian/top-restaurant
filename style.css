@@ -12,16 +12,17 @@
 
 .header {
   display: flex;
+  flex-direction: column;
+  gap: 1rem;
   justify-content: space-between;
   padding: 1rem 1rem;
   align-items: center;
   background-color: #feeb98;
 }
 
-.header > ul {
+.nav {
   display: flex;
-  gap: 1rem;
-  list-style: none;
+  gap: 4rem;
 }
 
 .blocks {
