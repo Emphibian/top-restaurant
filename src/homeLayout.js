@@ -1,4 +1,4 @@
-export function createLayout() {
+export function homeLayout() {
   let contentDiv = document.querySelector("#content");
 
   let bodyDiv = document.createElement("div");

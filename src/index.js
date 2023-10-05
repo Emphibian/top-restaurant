@@ -1,4 +1,4 @@
-import { createLayout } from "./createLayout.js";
+import { homeLayout } from "./homeLayout.js";
 
 function createHeader() {
   let contentDiv = document.querySelector("#content");
@@ -27,4 +27,4 @@ function createHeader() {
 }
 
 createHeader();
-createLayout();
+homeLayout();
