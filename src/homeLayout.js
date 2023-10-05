@@ -1,5 +1,5 @@
 export function homeLayout() {
-  let contentDiv = document.querySelector("main");
+  let mainBody = document.querySelector("main");
 
   let bodyDiv = document.createElement("div");
   bodyDiv.classList.add("blocks");

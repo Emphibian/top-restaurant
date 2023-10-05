@@ -1,4 +1,5 @@
 import { homeLayout } from "./homeLayout.js";
+import { menuLayout } from "./menuLayout.js";
 
 let currentTab = "Home";
 
