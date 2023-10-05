@@ -1,5 +1,7 @@
 import { homeLayout } from "./homeLayout.js";
 
+let currentTab = "Home";
+
 function createHeader() {
   let contentDiv = document.querySelector("#content");
 
@@ -16,6 +18,10 @@ function createHeader() {
   function createNavButton(text) {
     let navButton = document.createElement("button");
     navButton.textContent = text;
+    navButton.addEventListener("click", (e) => {
+      currentTab = text;
+      reloadLayout();
+    });
     return navButton;
   }
 
@@ -23,8 +29,32 @@ function createHeader() {
   buttonList.appendChild(createNavButton("Menu"));
   buttonList.appendChild(createNavButton("About"));
   headerDiv.appendChild(buttonList);
+
+  let mainBody = document.createElement("main");
   contentDiv.appendChild(headerDiv);
+  contentDiv.appendChild(mainBody);
+}
+
+function reloadLayout() {
+  let mainBody = document.querySelector("main");
+  if (mainBody) {
+    mainBody.innerHTML = "";
+
+    switch (currentTab) {
+      case "Home":
+        homeLayout();
+        break;
+      case "Menu":
+        menuLayout();
+        break;
+      case "About":
+        aboutLayout();
+        break;
+      default:
+        homeLayout();
+    }
+  }
 }
 
 createHeader();
-homeLayout();
+reloadLayout();

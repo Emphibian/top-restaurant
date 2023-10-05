@@ -1,5 +1,5 @@
 export function homeLayout() {
-  let contentDiv = document.querySelector("#content");
+  let contentDiv = document.querySelector("main");
 
   let bodyDiv = document.createElement("div");
   bodyDiv.classList.add("blocks");
@@ -34,5 +34,5 @@ export function homeLayout() {
   bodyDiv.appendChild(
     createBlockDiv("./shawnanggg-nmpW_WwwVSc-unsplash.jpg", "Who are we?"),
   );
-  contentDiv.appendChild(bodyDiv);
+  mainBody.appendChild(bodyDiv);
 }
