@@ -76,3 +76,25 @@
 .block:nth-child(even) {
   flex-direction: row-reverse;
 }
+
+.menu {
+  display: grid;
+  max-width: 75rem;
+  margin: 0 auto;
+  grid-template-columns: 1fr 1fr 1fr;
+  justify-items: center;
+  gap: 1rem;
+  padding: 1rem;
+  margin-top: 5rem;
+}
+
+.menu-element {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 1rem 2rem;
+  border: 2px solid;
+  width: min(400px, 100%);
+  height: clamp(100px, 30%, 10rem);
+}
