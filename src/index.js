@@ -1,5 +1,6 @@
 import { homeLayout } from "./homeLayout.js";
 import { menuLayout } from "./menuLayout.js";
+import { contactLayout } from "./contactLayout.js";
 import './style.css';
 
 let currentTab = "Home";
@@ -29,7 +30,7 @@ function createHeader() {
 
   buttonList.appendChild(createNavButton("Home"));
   buttonList.appendChild(createNavButton("Menu"));
-  buttonList.appendChild(createNavButton("About"));
+  buttonList.appendChild(createNavButton("Contact"));
   headerDiv.appendChild(buttonList);
 
   let mainBody = document.createElement("main");
@@ -49,8 +50,8 @@ function reloadLayout() {
       case "Menu":
         menuLayout();
         break;
-      case "About":
-        aboutLayout();
+      case "Contact":
+        contactLayout();
         break;
       default:
         homeLayout();
