@@ -1,26 +1,5 @@
-export function createLayout() {
-  let contentDiv = document.querySelector("#content");
-
-  let headerDiv = document.createElement("div");
-  headerDiv.classList.add("header");
-
-  let heading = document.createElement("h2");
-  heading.textContent = "Restaurant";
-  headerDiv.appendChild(heading);
-
-  let headerList = document.createElement("ul");
-
-  function createListElement(text) {
-    let listElement = document.createElement("li");
-    listElement.textContent = text;
-    return listElement;
-  }
-
-  headerList.appendChild(createListElement("Link 1"));
-  headerList.appendChild(createListElement("Link 1"));
-  headerList.appendChild(createListElement("Link 1"));
-  headerDiv.appendChild(headerList);
-  contentDiv.appendChild(headerDiv);
+export function homeLayout() {
+  let mainBody = document.querySelector("main");
 
   let bodyDiv = document.createElement("div");
   bodyDiv.classList.add("blocks");
@@ -55,5 +34,5 @@ export function createLayout() {
   bodyDiv.appendChild(
     createBlockDiv("./shawnanggg-nmpW_WwwVSc-unsplash.jpg", "Who are we?"),
   );
-  contentDiv.appendChild(bodyDiv);
+  mainBody.appendChild(bodyDiv);
 }
