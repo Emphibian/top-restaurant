@@ -27,12 +27,12 @@ export function homeLayout() {
 
   bodyDiv.appendChild(
     createBlockDiv(
-      "./anh-nguyen-kcA-c3f_3FE-unsplash.jpg",
+      "./salad.jpg",
       "Try out the new dish!",
     ),
   );
   bodyDiv.appendChild(
-    createBlockDiv("./shawnanggg-nmpW_WwwVSc-unsplash.jpg", "Who are we?"),
+    createBlockDiv("./restaurant.jpg", "Who are we?"),
   );
   mainBody.appendChild(bodyDiv);
 }
