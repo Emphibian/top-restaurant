@@ -1,3 +1,6 @@
+import restaurantImage from "./restaurant.jpg";
+import saladImage from "./salad.jpg";
+
 export function homeLayout() {
   let mainBody = document.querySelector("main");
 
@@ -25,14 +28,7 @@ export function homeLayout() {
     return blockDiv;
   }
 
-  bodyDiv.appendChild(
-    createBlockDiv(
-      "./anh-nguyen-kcA-c3f_3FE-unsplash.jpg",
-      "Try out the new dish!",
-    ),
-  );
-  bodyDiv.appendChild(
-    createBlockDiv("./shawnanggg-nmpW_WwwVSc-unsplash.jpg", "Who are we?"),
-  );
+  bodyDiv.appendChild(createBlockDiv(saladImage, "Try out the new dish!"));
+  bodyDiv.appendChild(createBlockDiv(restaurantImage, "Who are we?"));
   mainBody.appendChild(bodyDiv);
 }
